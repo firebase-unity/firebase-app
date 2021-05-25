@@ -164,7 +164,28 @@ Support
 
 Release Notes
 -------------
-### 7.1.0
+### 8.0.0:
+-   Breaking Changes
+    - Instance Id: Removed support for the previously-deprecated Instance ID
+      SDK.
+    - Remote Config: The previously-deprecated class
+      `FirebaseRemoteConfigDeprecated` and the property
+      `ConfigSettings.IsDeveloperMode` have been removed.
+
+### 7.2.0:
+-   Changes
+    - Database: Fixed a potential crash that can occur as a result of a race
+      condition when adding, removing and deleting `ValueListener`s or
+      `ChildListener`s rapidly.
+    - Database: Fixed a crash when setting large values on Windows and Mac
+      systems ([#517](https://github.com/firebase/quickstart-unity/issues/517)].
+    - FCM (Android): Fixed triggering of callback handlers for background
+      notifications. Using `enqueuWork` instead of `startService`.
+    - Crashlytics: Added new Unity-specific metadata to help diagnose tricky
+      crashes around specific hardware setups.
+
+
+### 7.1.0:
 -   Breaking Changes
     - Remote Config: Changed `FirebaseRemoteConfig` to be an instanced class,
       with new APIs to better manage fetching config data. The old static
@@ -197,7 +218,6 @@ Release Notes
     - Remote Config: Fixed numeric value conversion `ConfigValue.DoubleValue`
       and `ConfigValue.LongValue` to be locale independent.
     - Installations: Fixed pod version to 7.5.0.
-
 
 ### 7.0.1:
 -   Changes
