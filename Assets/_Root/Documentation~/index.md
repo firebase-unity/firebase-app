@@ -164,8 +164,18 @@ Support
 
 Release Notes
 -------------
-### Pending
+### 7.1.0
+-   Breaking Changes
+    - Remote Config: Changed `FirebaseRemoteConfig` to be an instanced class,
+      with new APIs to better manage fetching config data. The old static
+      methods are now deprecated, and can be accessed in the new class
+      `FirebaseRemoteConfigDeprecated`.
+    - Remote Config: `ConfigSettings.IsDeveloperMode` is now obsolete and does
+      nothing. `ConfigSettings.MinimumFetchInternalInMilliseconds` should be
+      adjusted instead.
 -   Changes
+    - General: Add GoogleServices-Info.plist to `Unity-iPhone` target in
+      Unity 2019.3+.
     - Firestore: Fixed partial updates in `UpdateAsync()` with
       `FieldValue.Delete`
       ([#882](https://github.com/firebase/quickstart-unity/issues/882)).
@@ -180,6 +190,13 @@ Release Notes
     - Auth: You can now specify a language for emails and text messages sent
       from your apps using UseAppLanguage() or setting the
       FirebaseAuth.LanguageCode property.
+    - Messaging (Android): Using `enqueueWork` instead of `startService`.
+      Fixes bug where we lost messages with data payloads received when app
+      is in background.
+      ([#877](https://github.com/firebase/quickstart-unity/issues/877)
+    - Remote Config: Fixed numeric value conversion `ConfigValue.DoubleValue`
+      and `ConfigValue.LongValue` to be locale independent.
+    - Installations: Fixed pod version to 7.5.0.
 
 
 ### 7.0.1:
