@@ -164,11 +164,26 @@ Support
 
 Release Notes
 -------------
-### 7.0.1:
+### Pending
 -   Changes
     - Firestore: Fixed partial updates in `UpdateAsync()` with
       `FieldValue.Delete`
       ([#882](https://github.com/firebase/quickstart-unity/issues/882)).
+    - Firestore: Fixed `DocumentSnapshot.ToDictionary()` on non-existent
+      documents when running on Android
+      ([#887](https://github.com/firebase/quickstart-unity/issues/887)).
+    - Firestore: Fixed crash setting FirebaseFirestore.LogLevel on Android
+      before any instances have been created
+      ([#888](https://github.com/firebase/quickstart-unity/issues/888)).
+    - Auth: Fixed a flaky crash when accessing the result from the task returned
+      by `FetchProvidersForEmailAsync`.
+    - Auth: You can now specify a language for emails and text messages sent
+      from your apps using UseAppLanguage() or setting the
+      FirebaseAuth.LanguageCode property.
+
+
+### 7.0.1:
+-   Changes
     - Remote Config (Android): Fixed the crash bug introduced in 7.0.0.
 
 ### 7.0.0:
