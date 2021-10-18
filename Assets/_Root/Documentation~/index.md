@@ -163,30 +163,6 @@ Support
 
 Release Notes
 -------------
-### 8.4.0:
--   Changes
-    - General: Added support for Android x86 64.
-    - Firestore: Improved the efficiency of progress callbacks in
-      `LoadBundleAsync()`.
-    - Firestore: Fixed crashes in Unity Editor on Linux caused by C++ exceptions
-      failing to be converted to C# exceptions.
-    - Firestore: Fixed intermittent hangs on Android when exceptions are thrown
-      by callbacks.
-    - Firestore: Fixed a crash on Android when `DocumentReference.Set()` was
-      invoked with an invalid `documentData` value (e.g. an int).
-    - Firestore: Fixed race conditions in the instance caching, terminate, and
-      disposal logic of `FirebaseFirestore`.
-
-### 8.3.0:
--   Changes
-    - Firestore: Simplified the API for modifying the settings of a
-      `FirebaseFirestore` instance. This is a backwards-incompatible change and
-      requires updates to code that sets `FirebaseFirestore.Settings`.
-    - Firestore: Changed an argument to `Query.WhereNotIn()` from `List` to
-      `IEnumerable`, to be consistent with `Query.WhereIn()`.
-    - Messaging (Android): Fixes an issue with receiving tokens when
-      initializing the app.
-
 ### 8.2.0:
 -   Changes
     - Firestore: Removed `Equals` and `GetHashCode` methods from `Query`,
