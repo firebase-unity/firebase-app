@@ -163,6 +163,12 @@ Support
 
 Release Notes
 -------------
+### 8.6.2:
+-   Changes
+    - Messaging (Android): Clean up callbacks on termination, to possibly fix
+      ANR issues in CheckAndFixDependenciesAsync
+      ([#1160](https://github.com/firebase/quickstart-unity/issues/1160)).
+
 ### 8.6.1:
 -   Changes
     - Crashlytics (Android): Updated the pinned dependency to fix a missing
