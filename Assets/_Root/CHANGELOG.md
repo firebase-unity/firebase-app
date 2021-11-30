@@ -163,6 +163,12 @@ Support
 
 Release Notes
 -------------
+### 8.6.1:
+-   Changes
+    - Crashlytics (Android): Updated the pinned dependency to fix a missing
+      method error
+      ([#1177](https://github.com/firebase/quickstart-unity/issues/1177)).
+
 ### 8.6.0:
 -   Changes
     - General (Android): Minimum SDK version is now 19.
@@ -183,7 +189,7 @@ Release Notes
       the Crashlytics console, Android customers will need to upload symbol
       files for their builds. See the [Getting Started with Crashlytics Unity]
       (https://firebase.google.com/docs/crashlytics/get-started?platform=unity)
-      Guild for more details.
+      Guide for more details.
     - Messaging (Android): Fixed crash resulting in ANR on termination.
       ([#1151](https://github.com/firebase/quickstart-unity/issues/1151)).
 
