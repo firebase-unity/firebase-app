@@ -163,6 +163,19 @@ Support
 
 Release Notes
 -------------
+### 8.5.0:
+-   Changes
+    - General (iOS): iOS SDKs are now built using Xcode 13.0.0.
+    - Crashlytics: Improved crash reporting for Unity Android apps using the
+      IL2CPP scripting backend. To display symbolicated IL2CPP stack traces in
+      the Crashlytics console, Android customers will need to upload symbol
+      files for their builds. See the [Getting Started with Crashlytics Unity]
+      (https://firebase.google.com/docs/crashlytics/get-started?platform=unity)
+      Guild for more details.
+    - Firestore: Fixed an issue where the `Equals()` and `GetHashCode()` methods
+      of `DocumentSnapshot` would sometimes be inconsistent
+      ([#8647](https://github.com/firebase/firebase-ios-sdk/pull/8647)).
+
 ### 8.4.0:
 -   Changes
     - General: Added support for Android x86 64.
