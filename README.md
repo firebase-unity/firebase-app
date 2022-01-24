@@ -2,10 +2,10 @@
 
 Add 
 
-- for version 8.5.0
+- for version 8.7.0
 ```csharp
-"com.google.firebase.app": "https://github.com/snorluxe/firebase-app.git?path=Assets/_Root#8.5.0",
-"com.google.external-dependency-manager": "https://github.com/snorluxe/external-dependency-manager.git?path=Assets/_Root#1.2.167",
+"com.google.firebase.app": "https://github.com/snorluxe/firebase-app.git?path=Assets/_Root#8.7.0",
+"com.google.external-dependency-manager": "https://github.com/snorluxe/external-dependency-manager.git?path=Assets/_Root#1.2.168",
 ```
 
 To `Packages/manifest.json`
