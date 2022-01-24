@@ -1,6 +1,6 @@
 {
-  "name": "com.snorlax.firebase-app",
-  "version": "8.6.2",
+  "name": "com.google.firebase.app",
+  "version": "8.5.0",
   "displayName": "Firebase App (Core)",
   "keywords": [
     "Google",
@@ -15,14 +15,6 @@
   "description": "Firebase App is the core library every Firebase package depends on.",
   "unity": "2017.1",
   "dependencies": {
-    "com.snorlax.external-dependency-manager": "1.2.167"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:snorluxe/firebase-app.git",
-    "directory": "com.snorlax.firebase-app"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@snorluxe"
+    "com.google.external-dependency-manager": "1.2.167"
   }
 }
