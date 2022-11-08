@@ -163,6 +163,33 @@ Support
 
 Release Notes
 -------------
+### UNRELEASED
+- Changes
+    - Storage: Added a method to access the url of a storage instance.
+
+### 8.7.0:
+- Changes
+    - General (iOS): Fixed an intermittent crash on iOS 15 caused by
+      constructing C++ objects during Objective-C's `+load` method.
+      ([#706](https://github.com/firebase/firebase-cpp-sdk/pull/706))
+      ([#783](https://github.com/firebase/firebase-cpp-sdk/pull/783))
+    - Crashlytics (Android): Fixed a bug that prevented some Crashlytics session
+      files from being removed after the session ended. All session-specific
+      files are now properly cleaned up.
+      ([#737](https://github.com/firebase/firebase-cpp-sdk/issues/737))
+
+### 8.6.2:
+-   Changes
+    - Messaging (Android): Clean up callbacks on termination, to possibly fix
+      ANR issues in CheckAndFixDependenciesAsync
+      ([#1160](https://github.com/firebase/quickstart-unity/issues/1160)).
+
+### 8.6.1:
+-   Changes
+    - Crashlytics (Android): Updated the pinned dependency to fix a missing
+      method error
+      ([#1177](https://github.com/firebase/quickstart-unity/issues/1177)).
+
 ### 8.6.0:
 -   Changes
     - General (Android): Minimum SDK version is now 19.
@@ -183,7 +210,7 @@ Release Notes
       the Crashlytics console, Android customers will need to upload symbol
       files for their builds. See the [Getting Started with Crashlytics Unity]
       (https://firebase.google.com/docs/crashlytics/get-started?platform=unity)
-      Guild for more details.
+      Guide for more details.
     - Messaging (Android): Fixed crash resulting in ANR on termination.
       ([#1151](https://github.com/firebase/quickstart-unity/issues/1151)).
 
