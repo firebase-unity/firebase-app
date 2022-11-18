@@ -2,9 +2,9 @@
 
 ### Install by add directly in `manifest.json` in folder `Packages/manifest.json`
 
-for version `10.1.0`
+for version `10.1.1`
 ```csharp
-"com.google.firebase.app": "https://github.com/firebase-unity/firebase-app.git#10.1.0",
+"com.google.firebase.app": "https://github.com/firebase-unity/firebase-app.git#10.1.1",
 ```
 
 dependency `external-dependency-manager-1.2.174`
