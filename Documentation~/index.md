@@ -2,7 +2,9 @@ Firebase Unity SDK
 ==================
 
 The Firebase Unity SDK provides Unity packages for the following Firebase
-features on *iOS* and *Android*:
+features on *iOS*, *tvOS* and *Android*.
+
+Note: Firebase Dynamic Links is not supported on tvOS.
 
 | Feature                            | Unity Package                     |
 |:----------------------------------:|:---------------------------------:|
@@ -67,6 +69,16 @@ Support
 
 Release Notes
 -------------
+### 10.4.0
+- Changes
+    - General (Android): Update to Firebase Android BoM version 31.2.0.
+    - General (iOS): Update to Firebase Cocoapods version 10.4.0.
+    - Firebase introduces Unity SDK support for tvOS, for Analytics,
+      Authentication, Crashlytics, Database, Firestore, Cloud Functions,
+      Installations, Messaging, Remote Config and Storage.
+    - Analytics: Added `SetConsent()` and `GetSessionIdAsync()` APIs.
+    - Crashlytics: Added `ReportUncaughtExceptionsAsFatal` property and `LogExceptionAsFatal` API.
+
 ### 10.3.0
 - Changes
     - General (Android): Update to Firebase Android BoM version 31.1.1.
