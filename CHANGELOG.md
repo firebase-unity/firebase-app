@@ -71,6 +71,15 @@ Support
 
 Release Notes
 -------------
+### 11.4.0
+- Changes
+    - General: Update to Firebase C++ SDK version 11.4.0.
+    - General (Android): Update to Firebase Android BoM version 32.2.2.
+    - General (iOS): Update to Firebase Cocoapods version 10.13.0.
+    - General (iOS): 32-bit iOS builds (i386 and armv7) are no longer supported.
+    - Auth: Fixed a potential crash with holding onto FirebaseUser objects
+      after the AuthResult has been disposed.
+
 ### 11.3.0
 - Changes
     - General: Update to Firebase C++ SDK version 11.3.0.
@@ -86,7 +95,7 @@ Release Notes
     - Firestore (Android) Fix the intermittent global references exhaustion
       crash when working with documents with a large number of keys and/or large
       map and/or array fields.
-      ([#1364](https://github.com/firebase/firebase-cpp-sdk/pull/1364)).
+      ([#569](https://github.com/firebase/firebase-unity-sdk/issues/569)).
     - Remote Config (Desktop): Additional fix for handling of non-English time
       zone names on Windows.
 
