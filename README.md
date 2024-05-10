@@ -1,6 +1,6 @@
 # How To Install
 
-- Since version `12.0.0` `FirebaseCppApp.bundle` used to running in unity editor in macbook not directly include in this package
+- As of version 12.0.0 `FirebaseCppApp.bundle` used to run in unity editor on macbook will not be directly included in this bundle
 - Instead it will be segregated into a separate bundle to minimize amount of bandwidth used by git LFS. [Install the following package if running on mac](https://github.com/firebase-unity/firebase-support-ios)
 
 
