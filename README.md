@@ -13,5 +13,5 @@ for version `12.5.0`
 
 dependency `external-dependency-manager-1.2.183`
 ```csharp
-"com.google.external-dependency-manager": "https://github.com/google-unity/external-dependency-manager.git#1.2.183",
+"com.google.external-dependency-manager": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm#v1.2.183",
 ```
